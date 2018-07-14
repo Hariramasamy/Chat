@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title> Real Time Chat </title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <nav class="blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Mani Chat</a>
+    </div>
+</nav>
+
+<div class="row ">
+    <div class="input-field col s12 l4 m4">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="name" type="text" class="validate" autocomplete="off">
+        <label for="name">Name</label>
+    </div>
+</div>
+
+<div id="thread"></div>
+
+    <div class="row">
+        <div class="input-field col l4 s10 m10">
+            <i class="material-icons prefix">chat</i>
+            <input id="message" type="text" class="validate" autocomplete="off">
+            <label for="message">Message</label>
+        </div>
+        <div class="col l4 s2">
+            <a id="submit" class="btn-floating btn-large waves-effect waves-light blue lighten-1"><i class="material-icons">send</i></a>
+        </div>
+    </div>
+
+
+<!--JQuery Library-->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<!--Node Js socket library-->
+<script src="/socket.io/socket.io.js"></script>
+<!--client.js file for operations-->
+<script src = "client.js"></script>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</body>
+
+</html>

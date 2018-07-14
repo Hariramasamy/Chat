@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</title>
+</head>
+<body>
+
+  <nav class="blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Mani Chat</a>
+    </div>
+  </nav>
+
+
+  <div class="row">
+
+    <div class="col s12 m4 l4">
+    </div>
+
+    <div class="card hoverable  col s12 m4 l4">
+        <div class="card-content flex-grow">
+          
+        
+
+        <div class="row ">
+          <div class="input-field col s12 l12 m12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="userName" type="text" class="validate" autocomplete="off">
+            <label for="userName">User Name</label>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="input-field col s12 l12 m12">
+            <i class="material-icons prefix">security</i>
+            <input id="password" type="password" class="validate" autocomplete="off">
+            <label for="password">Password</label>
+          </div>
+        </div>
+
+        <div class="row col s12 l12 m12">
+          <a id="login" class="waves-effect waves-light btn"><i class="material-icons right"><span id="validate"><span id="chatLogin">lock</span></span></i>Login</a>
+        </div>
+
+    </div>
+    </div>
+  </div>
+  <!--JQuery Library-->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!--Node Js socket library-->
+  <script src="/socket.io/socket.io.js"></script>
+  <!--client.js file for operations-->
+  <script src = "client.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--client.js file for operations-->
+<script src = "login.js"></script>
+</body>
+</html>
